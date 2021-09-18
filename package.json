@@ -4,7 +4,8 @@
   "description": "Auth bpt",
   "main": "app.js",
   "scripts": {
-    "test": "dev"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "JavaScript",
