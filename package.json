@@ -4,12 +4,12 @@
   "description": "Auth bpt",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "JavaScript",
-    "telegrafjs"
+    "Telegrafjs"
   ],
   "author": "Mukhammadyusuf Abdurakhimov <icoderx@yandex.com>",
   "license": "ISC",
