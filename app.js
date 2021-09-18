@@ -1,8 +1,8 @@
-// require("dotenv").config();
 const { Telegraf } = require("telegraf");
+const token = "2018699293:AAHXb_ZgxuEIdZSoMTcaTR2aL0Xveg__G9Y";
 const express = require("express");
 const app = express();
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Telegraf(token);
 const $chatId = -563717067;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
