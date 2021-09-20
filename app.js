@@ -1,9 +1,10 @@
+require("dotenv").config();
 const { Telegraf } = require("telegraf");
-const token = "2018699293:AAHXb_ZgxuEIdZSoMTcaTR2aL0Xveg__G9Y";
+const token = process.env.BOT_TOKEN;
 const express = require("express");
 const app = express();
 const bot = new Telegraf(token);
-const $chatId = -563717067;
+const $chatId = process.env.CHAT_ID;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine", "ejs");
@@ -26,5 +27,8 @@ app.post("/api", (req, res) => {
   res.status(200).json(req.body);
 });
 
-app.listen(3000, console.log("Server has been started: http://localhost:3000"));
+app.listen(
+  process.env.PORT || 3000,
+  console.log("Server has been started: http://localhost:3000")
+);
 bot.launch();
